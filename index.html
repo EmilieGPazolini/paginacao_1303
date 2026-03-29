@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paginação 13/03</title>
+    <style>
+        :root{
+            --bg-page:#b382c5;
+            --bg-card: #4a2e51;
+            --TEXT:#d8c1d7;
+            --BORDER:#5a2f58;
+            --hover:#692c66;
+            --transition:.2s ease-in-out;
+        }
+        body{
+            background-color: var(--bg-page);
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            height: 100vh;
+            align-items: center;
+            overflow: hidden;
+        }
+        .page{
+            list-style: none;
+            display: flex;
+            padding: 0;
+            gap: 2px;
+        }
+        .page li a{
+            padding: 10px 18px; 
+            background-color: var(--bg-card);
+            color: var(--TEXT); 
+            text-decoration: none; 
+            border: 2px solid var(--BORDER);
+            border-radius: 8px;
+            font-weight: 500;
+            margin: 0 2px;
+            transition: var(--transition);
+        }
+        .page li a:hover{
+            background-color: var(--hover);
+            border-color: var(--hover);
+            transition: translateY(-3px);
+            box-shadow: 0 6px 18px rgba (0, 0, 0, 0.5);
+        }
+        .setas{
+            background: #2f2338;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="page">
+            <li><a href="#" class="setas"><</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#" class="setas">>></a></li>
+        </ul>
+    </nav></body>
+
+</html>
